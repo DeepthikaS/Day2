@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="cssfile.css">
+
+    </head>
+    <body>
+
+        <div class="jumbotron text-center">
+                <h1 id="heading"><u><i>Calculator</i></u></h1>
+        </div>
+
+        <br>
+
+        <div class="container">
+                <table id="table">
+                    <form>
+                        <tr id="row1">
+                             <td colspan="3" ><input id="dis"></td>
+                             <td><input type="button" class="op" value="C" onclick="dis.value=' '"></td>
+                        </tr>
+                        <tr id="row">
+                            <td><input type="button" class="num" value="1" onclick="display('1')"></td>
+                            <td><input type="button" class="num" value="2" onclick="display('2')"></td>
+                            <td><input type="button" class="num" value="3" onclick="display('3')"></td>
+                            <td><input type="button" class="op" value="+" onclick="display('+')"></td>
+                        </tr>
+                        <tr id="row">
+                            <td><input type="button" class="num" value="4" onclick="display('4')"></td>
+                            <td><input type="button" class="num" value="5" onclick="display('5')"></td>
+                            <td><input type="button" class="num" value="6" onclick="display('6')"></td>
+                            <td><input type="button" class="op" value="-" onclick="display('-')"></td>
+                        </tr>
+                        <tr id="row">
+                            <td><input type="button" class="num" value="7" onclick="display('7')"></td>
+                            <td><input type="button" class="num" value="8" onclick="display('8')"></td>
+                            <td><input type="button" class="num" value="9" onclick="display('9')"></td>
+                            <td><input type="button" class="op" value="*" onclick="display('*')"></td>
+                        </tr>
+                        <tr id="row">
+                            <td><input type="button" class="num" value="." onclick="display('.')"></td>
+                            <td><input type="button" class="num" value="0" onclick="display('0')"></td>
+                            <td><input type="button" id="op1" value="=" onclick="calculate()"></td>
+                            <td><input type="button" class="op" value="/" onclick="display('/')"></td>
+                        </tr>
+                        
+                    </form>
+                 </table>
+        </div>
+        <script type="text/javascript" src="jsfile.js"></script>
+        <script src="swap.js"></script>
+    </body>
+</html>
