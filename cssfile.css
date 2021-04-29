@@ -30,7 +30,7 @@ td{
 
 .num{
     border-radius: 20px;
-    width:100%;
+    width:100px;
     height: 65px;
     font-size: 40px;
     background-color:lightgrey;
@@ -47,7 +47,7 @@ td{
 
 #op1{
     border-radius: 20px;
-    width:100%;
+    width:100px;
     height: 65px;
     font-size: 40px;
     color:darkcyan;
